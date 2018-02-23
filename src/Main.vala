@@ -1,8 +1,8 @@
-public class MyApp : Gtk.Application {
+public class Color : Gtk.Application {
 
-    public MyApp () {
+    public Color () {
         Object (
-            application_id: "com.github.vk2r.Color",
+            application_id: "com.github.vk2r.color",
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
@@ -16,7 +16,7 @@ public class MyApp : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        var app = new MyApp ();
+        var app = new Color ();
         return app.run (args);
     }
 }
